@@ -1,47 +1,55 @@
-.card {
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgb(222, 222, 222);
-  margin-top: 10px;
-}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .card{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    padding: 10px;
+    margin-bottom: 6px;
+    box-shadow: 10px 10px 5px lightblue;
+    width: inline-block;
+    width: 30%;
+  }
+  
+  .card span{
+    display: block;
+    margin:  6px;
+    
+  }
+  
+  
+  .reply{
+    cursor: pointer;
+  }
+  
+  .comment-details{
+    padding: 8px;
+    margin: 5px;
+    
+  }
+  
+  
+  .comment-input{
+    border: none;
+    padding: 8px;
+    margin-left: 10px;
+    background: lightblue;
+  }
+  
+  
+  .comment-submit{
+    padding: 10px;
+    margin-left: 4px;
+    background: lightblue;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+  }
 
-.text {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.reply {
-  color: rgb(84, 84, 233);
-  cursor: pointer;
-  margin-top: 5px;
-}
-
-.comment-details {
-  margin-left: 4rem;
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.input {
-  height: 30px;
-  border-radius: 10px;
-}
-
-.btn {
-  color: white;
-  margin-left: 5px;
-  background-color: rgb(135, 135, 235);
-  border: 0px;
-  border-radius: 10px;
-  height: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-.all-comment:not(:first-child) {
-  margin-left: 4rem;
-}
+  .all-comments:not(:first-child){
+    margin-left: 4rem ;
+  }
